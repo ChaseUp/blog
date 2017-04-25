@@ -1,3 +1,41 @@
 <%- include('header') %>
-注册页
+
+<div class="signup-box">
+	<ul>
+		<li>
+			<span class="item-name">用户名:</span>
+			<input type="text" name="name">
+		</li>
+		<li>
+			<span class="item-name">密码:</span>
+			<input type="password" name="password">
+		</li>
+		<li>
+			<span class="item-name">重复密码:</span>
+			<input type="password" name="repassword">
+		</li>
+		<li>
+			<span class="item-name">性别</span>
+			<select name="gender" id="">
+				<option value="m">男</option>
+				<option value="f">女</option>
+			</select>
+		</li>
+		<li>
+			<span class="item-name">头像:</span>
+			<input type="file" name="avatar">
+		</li>
+		<li>
+			<span class="item-name">简介:</span>
+			<textarea name="info" id="" cols="30" rows="10"></textarea>
+		</li>
+		<li>
+			<p class="error-msg"></p>
+		</li>
+		<li>
+			<button class="submit">注册</button>
+		</li>
+	</ul>
+</div>
+
 <%- include('footer') %>
